@@ -7,7 +7,7 @@
         "FieldName":"SessionName",
         "InputType":"text",
         "ParamFieldName":"SessionSettings.SessionName",
-        "DefaultValue":"AMP Powered ARK: Survival Ascended Server",
+        "DefaultValue":"KVG: <MAP NAME>",
         "EnumValues":{}
     },
     {
@@ -18,7 +18,7 @@
         "FieldName":"MOTDMessage",
         "InputType":"text",
         "ParamFieldName":"MessageOfTheDay.Message",
-        "DefaultValue":"Welcome to ARK!",
+        "DefaultValue":"Welcome to KVG Gaming.  Enjoy our server, please visit us on Discord  https://discord.gg/Rc8Ftw6AxC to report any bugs or keep up with news about the server - Special Note: We\'re currently testing settings, so things may change occaisionally.",
         "EnumValues":{}
     },
     {
@@ -46,7 +46,7 @@
         "EnumValues":{
             "TheIsland_WP":"The Island (default)",
             "ScorchedEarth_WP":"Scorched Earth",
-            "TheCenter_WP":"The Center",
+			"TheCenter_WP":"The Center",
             "{{CustomMap}}":"--Custom--"
         }
     },
@@ -84,8 +84,8 @@
         "FieldName":"modslist",
         "InputType":"text",
         "ParamFieldName":"modslist",
-        "DefaultValue":"",
-        "Placeholder":"900062,893657",
+        "DefaultValue":"979566,947033,948062,931874,950914",
+        "Placeholder":"979566,947033,948062,931874,950914",
         "EnumValues":{}
     },
     {
@@ -1997,5 +1997,444 @@
             "False":"false",
             "True":"true"
         }
-    }
+    },
+	{
+        "DisplayName":"Admins See Teleporters",
+        "Category":"Awesome Teleporters",
+        "Description":"Admins see every player and teleporter regardless of team. (MOD Default=False)",
+        "Keywords":"admin,teleporter",
+        "FieldName":"AdminsSeeAllTeleporters",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.AdminsSeeAllTeleporters",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Allow Teleporting to Players",
+        "Category":"Awesome Teleporters",
+        "Description":"Friendly players will be available as teleport locations. (MOD Default=True)",
+        "Keywords":"player,teleport",
+        "FieldName":"AllowTeleportingToPlayers",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.AllowTeleportingToPlayers",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Allow Teleporting to Obelisks",
+        "Category":"Awesome Teleporters",
+        "Description":"Obelisks will be available teleport locations for everyone. (MOD Default=True)",
+        "Keywords":"obelisk,teleport",
+        "FieldName":"AllowTeleportingToObelisks",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.AllowTeleportingToObelisks",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"false",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Teleporters Are Transmitters",
+        "Category":"Awesome Teleporters",
+        "Description":"Teleporters inventory acts like a tek transmitter. (MOD Default=True)",
+        "Keywords":"transmitter,teleport",
+        "FieldName":"TeleportersAreTransmitters",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.TeleportersAreTransmitters",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"false",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Teleporters Require Power",
+        "Category":"Awesome Teleporters",
+        "Description":"Should teleporters require power. (MOD Default=False)",
+        "Keywords":"power,teleporter",
+        "FieldName":"TeleportersRequirePower",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.TeleportersRequirePower",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Teleport Out of Safe Zones",
+        "Category":"Awesome Teleporters",
+        "Description":"Can players use teleporters to get out of caves etc. (MOD Default=True)",
+        "Keywords":"cave,teleport,safe,zone,out",
+        "FieldName":"AllowTeleportingOutOfPreventionZones",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.AllowTeleportingOutOfPreventionZones",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"false",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Corpse Recovery",
+        "Category":"Awesome Teleporters",
+        "Description":"Teleporters will get the player's stuff back from their corpse. (MOD Default=True)",
+        "Keywords":"corpse,death,recovery,teleport",
+        "FieldName":"AllowCorpseFinder",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.AllowCorpseFinder",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"false",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Recovery Lost Dinos",
+        "Category":"Awesome Teleporters",
+        "Description":"Can players teleport remote dinos they applied an Awesome Dino Tracker to, to their current location. (MOD Default=True)",
+        "Keywords":"dino,recovery,finder,teleport",
+        "FieldName":"AllowFindDinos",
+        "InputType":"checkbox",
+        "ParamFieldName":"AwesomeTeleporters.AllowFindDinos",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"false",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Max Teleporters",
+        "Category":"Awesome Teleporters",
+        "Description":"How many teleporters can a single tribe have? Admins ignore this rule. (Mod Default= 0=Disabled)",
+        "Keywords":"max,tribe,teleport",
+        "FieldName":"MaxTeleportersPerTribe",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"AwesomeTeleporters.MaxTeleportersPerTribe",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"2",
+        "Placeholder":"2",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Bubble Duration to Complete Teleport",
+        "Category":"Awesome Teleporters",
+        "Description":"How many seconds after creating a teleport bubble does it take to teleport those inside. Float value 1-100(Mod Default= 5)",
+        "Keywords":"bubble,timer,teleport",
+        "FieldName":"BubbleDuration",
+        "InputType":"number",
+        "MinValue":"1",
+        "ParamFieldName":"AwesomeTeleporters.BubbleDuration",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"15",
+        "Placeholder":"15",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Disable Door Sounds",
+        "Category":"Arkitect Structures Remastered",
+        "Description":"Set to true to disable sound. (MOD Default=False)",
+        "Keywords":"door,sound,off,disable",
+        "FieldName":"DefaultDoorSoundOff",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.DefaultDoorSoundOff",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Allow Intake To Place Without Water",
+        "Category":"Arkitect Structures Remastered",
+        "Description":"Allows intakes to function without being in water. (MOD Default=False)",
+        "Keywords":"intake,water,disable",
+        "FieldName":"AllowIntakeToPlaceWithoutWater",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.AllowIntakeToPlaceWithoutWater",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Allow Admin To Demolish Any Structure",
+        "Category":"Arkitect Structures Remastered",
+        "Description":"Allows admins to demolish any tribe structure with the gun. (MOD Default=False)",
+        "Keywords":"admin,gun,structure,demolish",
+        "FieldName":"StructureGunAllowAdminToDemolishAnyTribe",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.StructureGunAllowAdminToDemolishAnyTribe",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Additional Support Distance in Foundations",
+        "Category":"Arkitect Structures Remastered",
+        "Description":"Provides additional foundation support for objects to extend beyond limits. (Mod Default=0)",
+        "Keywords":"foundation,distance,support",
+        "FieldName":"AdditionalSupportDistanceInFoundations",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"ArkitectStructuresRemastered.AdditionalSupportDistanceInFoundations",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"15",
+        "Placeholder":"15",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Resource Pull Range In Foundations",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Sets the distance crafting stations can pull from (max 100). (Mod Default=25)",
+        "Keywords":"resource,pull,range,crafting",
+        "FieldName":"ResourcePullRangeInFoundations",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"MPlus.ResourcePullRangeInFoundations",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"50",
+        "Placeholder":"50",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Item Collector Range In Foundations",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Sets the distance for the Item Collector to be able to pull from (max 100). (Mod Default=25)",
+        "Keywords":"item,collector,pull,range",
+        "FieldName":"ItemCollectorRangeInFoundations",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"MPlus.ItemCollectorRangeInFoundations",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"50",
+        "Placeholder":"50",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Farmer Range In Foundations",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Sets the distance for the Farmer to function from (max 100). (Mod Default=25)",
+        "Keywords":"farmer,pull,range",
+        "FieldName":"FarmerRangeInFoundations",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"MPlus.FarmerRangeInFoundations",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"50",
+        "Placeholder":"50",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Cloning Cost Multiplier",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Lower number causes the cloning process to be cheaper. (Mod Default=0.5)",
+        "Keywords":"cloning,cost",
+        "FieldName":"CloningCostMultiplier",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"MPlus.CloningCostMultiplier",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"1",
+        "Placeholder":"1",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Replicator Scale",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Adjust Replicator scale size. (Mod Default=1)",
+        "Keywords":"replicator,scale,size",
+        "FieldName":"ReplicatorScaleMultiplier",
+        "InputType":"number",
+        "MinValue":"0.25",
+        "ParamFieldName":"MPlus.ReplicatorScaleMultiplier",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"0.25",
+        "Placeholder":"0.25",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Industrial Forge Scale",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Adjust Industrial Forge scale size. (Mod Default=1)",
+        "Keywords":"industrial,forge,scale,size",
+        "FieldName":"IndustrialForgeScaleMultiplier",
+        "InputType":"number",
+        "MinValue":"0.125",
+        "ParamFieldName":"MPlus.IndustrialForgeScaleMultiplier",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"0.125",
+        "Placeholder":"0.125",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Grinder Scale",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Adjust Grinder scale size. (Mod Default=1)",
+        "Keywords":"grinder,scale,size",
+        "FieldName":"GrinderScaleMultiplier",
+        "InputType":"number",
+        "MinValue":"0.125",
+        "ParamFieldName":"MPlus.GrinderScaleMultiplier",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"0.125",
+        "Placeholder":"0.125",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Tek Storage Slot Count",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Maximum number of slots in the Tek Storage. (Mod Default=500)",
+        "Keywords":"tek,storage,slot,count",
+        "FieldName":"TekStorageSlotCount",
+        "InputType":"number",
+        "MinValue":"500",
+        "ParamFieldName":"MPlus.TekStorageSlotCount",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"1000",
+        "Placeholder":"1000",
+        "EnumValues":{}
+    },
+	{
+        "DisplayName":"Pulling Ignores Pin Codes",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Allows crafting and pulling through containers with pin codes. (MOD Default=False)",
+        "Keywords":"crafting,pulling,pin,codes",
+        "FieldName":"PullingIgnoresPinCodes",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.PullingIgnoresPinCodes",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"No Foundations Required",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Removes the need for foundations to place certain items. (MOD Default=False)",
+        "Keywords":"foundations,required,placement,crafting,station",
+        "FieldName":"NoFoundationsRequired",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.NoFoundationsRequired",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Prevent Cloning of Cloned Dinos",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Prevents cloning of dinos that were previously cloned. (MOD Default=False)",
+        "Keywords":"prevent,disable,cloning,cloned,dino",
+        "FieldName":"PreventCloningClonedDinos",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.PreventCloningClonedDinos",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Prevent Cloning of Neutered Dinos",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Prevents cloning of Spayed/Neutered Dinos. (MOD Default=False)",
+        "Keywords":"prevent,disable,cloning,spay,neuter,dino",
+        "FieldName":"PreventCloningNeuteredDinos",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.PreventCloningNeuteredDinos",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Disable Dino Scan Stats",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Disables the display of dino stats on the scanner. (MOD Default=False)",
+        "Keywords":"disable,stat,dino,scan",
+        "FieldName":"DisableDinoScanStats",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.DisableDinoScanStats",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Disable Multiple Transmitter",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Disables the need to have more than one transmitter to scan. (MOD Default=False)",
+        "Keywords":"disable,multiple,transmitter,requirement",
+        "FieldName":"DisableNeedMultipleTransmitter",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.DisableNeedMultipleTransmitter",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Disable Teleporter Power Requirements",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Removes the need for multiple generators to use omni-tool features. (MOD Default=False)",
+        "Keywords":"disable,teleporter,power,requirements",
+        "FieldName":"DisableTeleporterPowerRequirement",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.DisableTeleporterPowerRequirement",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
+	{
+        "DisplayName":"Dedicated Storage Allow Non Stackables",
+        "Category":"Mystic Plus (M+)",
+        "Description":"Allows dedicated storage to store non stackable items such as fertilizer. (MOD Default=False)",
+        "Keywords":"dedicated,storage,allow,non,stackables",
+        "FieldName":"DedicatedStorageAllowNonStackables",
+        "InputType":"checkbox",
+        "ParamFieldName":"ArkitectStructuresRemastered.DedicatedStorageAllowNonStackables",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"true",
+		"EnumValues":{
+            "False":"false",
+            "True":"true"
+		}
+    },
 ]
