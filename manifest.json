@@ -1,9 +1,9 @@
 {
-	"id": "ec280171-c67b-4cf8-923f-dc27fea91ee1",
-	"authors": ["CubeCoders Limited", "AMP Community"],
-	"origin": "https://github.com/CubeCoders/AMPTemplates.git",
-	"url": "https://github.com/CubeCoders/AMPTemplates",
+	"id": "acdf122f-9da6-4990-8f94-324ce3764a65",
+	"authors": ["KVG Community"],
+	"origin": "https://github.com/KVGAdmin/AMPTemplates.git",
+	"url": "https://github.com/KVGAdmin/AMPTemplates",
 	"imagefile": "",
-	"prefix": "",
+	"prefix": "KVG",
 	"repotype": "AppTemplates"
 }
