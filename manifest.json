@@ -1,8 +1,8 @@
 {
 	"id": "acdf122f-9da6-4990-8f94-324ce3764a65",
 	"authors": ["KVG Community"],
-	"origin": "https://github.com/KVGAdmin/AMPTemplates.git",
-	"url": "https://github.com/KVGAdmin/AMPTemplates",
+	"origin": "https://github.com/KVGAdmin/KVGTemplates.git",
+	"url": "https://github.com/KVGAdmin/KVGTemplates",
 	"imagefile": "",
 	"prefix": "KVG",
 	"repotype": "AppTemplates"
