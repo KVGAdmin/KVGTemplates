@@ -529,7 +529,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.AllowThirdPersonPlayer",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -559,7 +559,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.PreventSpawnAnimations",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -800,7 +800,7 @@
         "FieldName":"AllowCaveBuildingPVE",
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.AllowCaveBuildingPVE",
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -829,7 +829,7 @@
         "FieldName":"AllowSpeedLeveling",
         "InputType":"checkbox",
         "ParamFieldName":"AllowSpeedLeveling",
-        "DefaultValue":"",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"",
             "True":"-AllowSpeedLeveling "
@@ -1014,7 +1014,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.AllowAnyoneBabyImprintCuddle",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
