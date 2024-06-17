@@ -815,7 +815,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.AllowFlyerCarryPvE",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
