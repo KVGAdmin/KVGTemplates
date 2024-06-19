@@ -70,7 +70,7 @@
         "FieldName":"mods",
         "InputType":"checkbox",
         "ParamFieldName":"mods",
-        "DefaultValue":"",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"",
             "True":"-mods={{modslist}} "
@@ -195,7 +195,7 @@
         "FieldName":"BattlEye",
         "InputType":"checkbox",
         "ParamFieldName":"BattlEye",
-        "DefaultValue":"",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"",
             "True":"-NoBattlEye "
@@ -235,7 +235,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.AdminLogging",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -281,8 +281,8 @@
         "MaxValue":"9000000",
         "ParamFieldName":"ServerSettings.AutoSavePeriodMinutes",
         "IncludeInCommandLine":false,
-        "DefaultValue":"15.0",
-        "Placeholder":"15.0",
+        "DefaultValue":"10.0",
+        "Placeholder":"10.0",
         "Suffix":"minutes",
         "EnumValues":{}
     },
@@ -308,7 +308,7 @@
         "FieldName":"NoTransferFromFiltering",
         "InputType":"checkbox",
         "ParamFieldName":"NoTransferFromFiltering",
-        "DefaultValue":"",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"",
             "True":"-NoTransferFromFiltering "
@@ -358,7 +358,7 @@
         "FieldName":"CustomFlags",
         "InputType":"text",
         "ParamFieldName":"CustomFlags",
-        "DefaultValue":"",
+        "DefaultValue":"-AlwaysTickDedicatedSkeletalMeshes -servergamelog -EasterColors",
         "Placeholder":"-UseItemDupeCheck -UseSecureSpawnRules",
         "EnumValues":{}
     },
@@ -383,7 +383,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.ServerPVE",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -441,7 +441,7 @@
         "FieldName":"OverrideOfficialDifficulty",
         "InputType":"checkbox",
         "ParamFieldName":"OverrideOfficialDifficulty",
-        "DefaultValue":"",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"",
             "True":"?OverrideOfficialDifficulty={{DifficultyOverrideLevel}}"
@@ -456,8 +456,8 @@
         "InputType":"number",
         "MinValue":"0",
         "ParamFieldName":"DifficultyOverrideLevel",
-        "DefaultValue":"4.0",
-        "Placeholder":"4.0",
+        "DefaultValue":"5.0",
+        "Placeholder":"5.0",
         "EnumValues":{}
     },
     {
@@ -712,7 +712,7 @@
         "FieldName":"bPvEDisableFriendlyFire",
         "InputType":"checkbox",
         "ParamFieldName":"/Script/ShooterGame.ShooterGameMode.bPvEDisableFriendlyFire",
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -742,7 +742,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.DisablePvEGamma",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -940,7 +940,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.DisableDinoDecayPvE",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -1109,18 +1109,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Day/Night Cycle Speed Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"DayCycleSpeedScale",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"DayCycleSpeedScale",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Day Time Speed Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for the length of each server day, relative to the length of each night. Lowering this value increases the day length",
@@ -1131,18 +1119,6 @@
         "IncludeInCommandLine":false,
         "DefaultValue":"1.000000",
         "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Day Time Speed Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"DayTimeSpeedScale",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"DayTimeSpeedScale",
-        "IncludeInCommandLine":true,
         "EnumValues":{}
     },
     {
@@ -1159,18 +1135,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Night Time Speed Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"NightTimeSpeedScale",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"NightTimeSpeedScale",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"XP Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for experience (XP) received by players, tribes and dinosaurs for various actions. The default value 1 provides the same experience as a singleplayer game. Higher values increase XP amounts awarded, lower values decrease it",
@@ -1179,20 +1143,8 @@
         "InputType":"number",
         "ParamFieldName":"ServerSettings.XPMultiplier",
         "IncludeInCommandLine":false,
-        "DefaultValue":"1.000000",
-        "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"XP Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"XPMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"XPMultiplier",
-        "IncludeInCommandLine":true,
+        "DefaultValue":"1.500000",
+        "Placeholder":"1.500000",
         "EnumValues":{}
     },
     {
@@ -1209,18 +1161,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Player Food Drain Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"PlayerCharacterFoodDrainMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"PlayerCharacterFoodDrainMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Player Water Drain Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for player characters' water consumption. Higher values increase water consumption (player characters get thirsty faster)",
@@ -1231,18 +1171,6 @@
         "IncludeInCommandLine":false,
         "DefaultValue":"1.000000",
         "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Player Water Drain Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"PlayerCharacterWaterDrainMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"PlayerCharacterWaterDrainMultiplier",
-        "IncludeInCommandLine":true,
         "EnumValues":{}
     },
     {
@@ -1259,18 +1187,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Player Health Recovery Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"PlayerCharacterHealthRecoveryMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"PlayerCharacterHealthRecoveryMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Player Stamina Drain Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for player characters' stamina consumption. Higher values increase stamina consumption (player characters get tired faster)",
@@ -1281,18 +1197,6 @@
         "IncludeInCommandLine":false,
         "DefaultValue":"1.000000",
         "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Player Stamina Drain Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"PlayerCharacterStaminaDrainMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"PlayerCharacterStaminaDrainMultiplier",
-        "IncludeInCommandLine":true,
         "EnumValues":{}
     },
     {
@@ -1309,18 +1213,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Player Damage Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"PlayerDamageMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"PlayerDamageMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Player Resistance Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for players' damage resistance when attacked. The default value 1 causes normal damage. Higher values decrease resistance, increasing damage per attack. Lower values increase it, reducing damage per attack",
@@ -1331,18 +1223,6 @@
         "IncludeInCommandLine":false,
         "DefaultValue":"1.000000",
         "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Player Resistance Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"PlayerResistanceMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"PlayerResistanceMultiplier",
-        "IncludeInCommandLine":true,
         "EnumValues":{}
     },
     {
@@ -1359,18 +1239,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Creature Food Drain Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"DinoCharacterFoodDrainMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"DinoCharacterFoodDrainMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Creature Health Recovery Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for creatures' health recovery. Higher values increase the recovery rate (creatures heal faster)",
@@ -1381,18 +1249,6 @@
         "IncludeInCommandLine":false,
         "DefaultValue":"1.000000",
         "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Creature Health Recovery Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"DinoCharacterHealthRecoveryMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"DinoCharacterHealthRecoveryMultiplier",
-        "IncludeInCommandLine":true,
         "EnumValues":{}
     },
     {
@@ -1409,18 +1265,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Creature Stamina Drain Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"DinoCharacterStaminaDrainMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"DinoCharacterStaminaDrainMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Creature Damage Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for the damage that wild creatures cause with their attacks. The default value 1 causes normal damage. Higher values increase damage, lower values decrease it",
@@ -1431,18 +1275,6 @@
         "IncludeInCommandLine":false,
         "DefaultValue":"1.000000",
         "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Creature Damage Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"DinoDamageMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"DinoDamageMultiplier",
-        "IncludeInCommandLine":true,
         "EnumValues":{}
     },
     {
@@ -1459,18 +1291,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Creature Resistance Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"DinoResistanceMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"DinoResistanceMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"PvE Creature Decay Period Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Set the scaling factor for the unclaiming speed of creatures in PvE mode. Requires Disable PvE Creature Decay to be off",
@@ -1479,8 +1299,8 @@
         "InputType":"number",
         "ParamFieldName":"ServerSettings.PvEDinoDecayPeriodMultiplier",
         "IncludeInCommandLine":false,
-        "DefaultValue":"1.000000",
-        "Placeholder":"1.000000",
+        "DefaultValue":"4.000000",
+        "Placeholder":"4.000000",
         "EnumValues":{}
     },
     {
@@ -1510,18 +1330,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Structure Resistance Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"StructureResistanceMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"StructureResistanceMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Maximum Platform Structures Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for the maximum number of structures placeable on platform saddles and rafts. NOTE: high values may lead to lag",
@@ -1543,20 +1351,8 @@
         "InputType":"number",
         "ParamFieldName":"ServerSettings.HarvestAmountMultiplier",
         "IncludeInCommandLine":false,
-        "DefaultValue":"1.000000",
-        "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Harvest Amount Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"HarvestAmountMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"HarvestAmountMultiplier",
-        "IncludeInCommandLine":true,
+        "DefaultValue":2.000000",
+        "Placeholder":"2.000000",
         "EnumValues":{}
     },
     {
@@ -1573,18 +1369,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Harvest Health Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"HarvestHealthMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"HarvestHealthMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Resources Respawn Period Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for the resource node respawn rate (trees, rocks, bushes, etc). Lower values cause nodes to respawn more frequently",
@@ -1598,18 +1382,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Resources Respawn Period Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"ResourcesRespawnPeriodMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"ResourcesRespawnPeriodMultiplier",
-        "IncludeInCommandLine":true,
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Creature Taming Speed Multiplier",
         "Category":"ARK Multiplier Settings",
         "Description":"Sets the scaling factor for creature taming speed. Higher values make taming faster",
@@ -1618,20 +1390,8 @@
         "InputType":"number",
         "ParamFieldName":"ServerSettings.TamingSpeedMultiplier",
         "IncludeInCommandLine":false,
-        "DefaultValue":"1.000000",
-        "Placeholder":"1.000000",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Creature Taming Speed Multiplier",
-        "Category":"ARK Multiplier Settings",
-        "Description":"",
-        "Keywords":"",
-        "FieldName":"TamingSpeedMultiplier",
-        "InputType":"number",
-        "Hidden":true,
-        "ParamFieldName":"TamingSpeedMultiplier",
-        "IncludeInCommandLine":true,
+        "DefaultValue":"4.000000",
+        "Placeholder":"4.000000",
         "EnumValues":{}
     },
     {
@@ -1656,8 +1416,8 @@
         "InputType":"number",
         "ParamFieldName":"ServerSettings.ItemStackSizeMultiplier",
         "IncludeInCommandLine":false,
-        "DefaultValue":"1.000000",
-        "Placeholder":"1.000000",
+        "DefaultValue":"5.000000",
+        "Placeholder":"5.000000",
         "EnumValues":{}
     },
     {
@@ -1696,7 +1456,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.DisableStructureDecayPvE",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -1711,7 +1471,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.OverrideStructurePlatformPrevention",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -1726,7 +1486,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.EnableExtraStructurePreventionVolumes",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -1741,7 +1501,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.PvEAllowStructuresAtSupplyDrops",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -1755,7 +1515,7 @@
         "FieldName":"bDisableStructurePlacementCollision",
         "InputType":"checkbox",
         "ParamFieldName":"/Script/ShooterGame.ShooterGameMode.bDisableStructurePlacementCollision",
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -1770,7 +1530,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.AlwaysAllowStructurePickup",
         "IncludeInCommandLine":false,
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -1814,7 +1574,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"ClusterDirOverride",
         "IncludeInCommandLine":false,
-        "DefaultValue":"",
+        "DefaultValue":"/AMP/clusterdir",
         "EnumValues":{}
     },
     {
