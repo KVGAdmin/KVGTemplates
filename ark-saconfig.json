@@ -1351,7 +1351,7 @@
         "InputType":"number",
         "ParamFieldName":"ServerSettings.HarvestAmountMultiplier",
         "IncludeInCommandLine":false,
-        "DefaultValue":2.000000",
+        "DefaultValue":"2.000000",
         "Placeholder":"2.000000",
         "EnumValues":{}
     },
