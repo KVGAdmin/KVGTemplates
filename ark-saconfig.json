@@ -698,7 +698,7 @@
         "FieldName":"bDisableFriendlyFire",
         "InputType":"checkbox",
         "ParamFieldName":"/Script/ShooterGame.ShooterGameMode.bDisableFriendlyFire",
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
@@ -969,7 +969,7 @@
         "FieldName":"bPassiveDefensesDamageRiderlessDinos",
         "InputType":"checkbox",
         "ParamFieldName":"/Script/ShooterGame.ShooterGameMode.bPassiveDefensesDamageRiderlessDinos",
-        "DefaultValue":"False",
+        "DefaultValue":"True",
         "EnumValues":{
             "False":"False",
             "True":"True"
