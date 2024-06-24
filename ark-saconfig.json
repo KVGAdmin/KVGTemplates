@@ -358,7 +358,7 @@
         "FieldName":"CustomFlags",
         "InputType":"text",
         "ParamFieldName":"CustomFlags",
-        "DefaultValue":"-AlwaysTickDedicatedSkeletalMeshes -servergamelog -EasterColors",
+        "DefaultValue":"-AlwaysTickDedicatedSkeletalMeshes -EasterColors",
         "Placeholder":"-UseItemDupeCheck -UseSecureSpawnRules",
         "EnumValues":{}
     },
