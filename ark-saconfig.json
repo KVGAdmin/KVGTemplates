@@ -70,7 +70,7 @@
         "FieldName":"mods",
         "InputType":"checkbox",
         "ParamFieldName":"mods",
-        "DefaultValue":"True",
+        "DefaultValue":"-mods={{modslist}} ",
         "EnumValues":{
             "False":"",
             "True":"-mods={{modslist}} "
@@ -195,7 +195,7 @@
         "FieldName":"BattlEye",
         "InputType":"checkbox",
         "ParamFieldName":"BattlEye",
-        "DefaultValue":"True",
+        "DefaultValue":"-NoBattlEye ",
         "EnumValues":{
             "False":"",
             "True":"-NoBattlEye "
@@ -308,7 +308,7 @@
         "FieldName":"NoTransferFromFiltering",
         "InputType":"checkbox",
         "ParamFieldName":"NoTransferFromFiltering",
-        "DefaultValue":"True",
+        "DefaultValue":"-NoTransferFromFiltering ",
         "EnumValues":{
             "False":"",
             "True":"-NoTransferFromFiltering "
@@ -441,7 +441,7 @@
         "FieldName":"OverrideOfficialDifficulty",
         "InputType":"checkbox",
         "ParamFieldName":"OverrideOfficialDifficulty",
-        "DefaultValue":"True",
+        "DefaultValue":"?OverrideOfficialDifficulty={{DifficultyOverrideLevel}}",
         "EnumValues":{
             "False":"",
             "True":"?OverrideOfficialDifficulty={{DifficultyOverrideLevel}}"
@@ -829,7 +829,7 @@
         "FieldName":"AllowSpeedLeveling",
         "InputType":"checkbox",
         "ParamFieldName":"AllowSpeedLeveling",
-        "DefaultValue":"True",
+        "DefaultValue":"-AllowSpeedLeveling ",
         "EnumValues":{
             "False":"",
             "True":"-AllowSpeedLeveling "
