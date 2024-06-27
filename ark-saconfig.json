@@ -235,7 +235,7 @@
         "InputType":"checkbox",
         "ParamFieldName":"ServerSettings.AdminLogging",
         "IncludeInCommandLine":false,
-        "DefaultValue":"True",
+        "DefaultValue":"",
         "EnumValues":{
             "False":"False",
             "True":"True"
