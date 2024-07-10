@@ -1814,7 +1814,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"ClusterDirOverride",
         "IncludeInCommandLine":false,
-        "DefaultValue":"/AMP/arksa/2430930/clusterdir",
+        "DefaultValue":"/AMP/ark-sa/2430930/clusterdir",
         "EnumValues":{}
     },
     {
