@@ -18,7 +18,7 @@
         "FieldName":"MOTDMessage",
         "InputType":"text",
         "ParamFieldName":"MessageOfTheDay.Message",
-        "DefaultValue":"Welcome to KVG Gaming.  Enjoy our server, please visit us on Discord  https://discord.gg/Rc8Ftw6AxC to report any bugs or keep up with news about the server - Special Note: We\'re currently testing settings, so things may change occaisionally.",
+        "DefaultValue":"Welcome to KVG Gaming.  Enjoy our server, please visit us on Discord  https://discord.gg/Rc8Ftw6AxC to report any bugs or keep up with news about the server - Special Note: We are currently testing settings, so things may change occaisionally.",
         "EnumValues":{}
     },
     {
