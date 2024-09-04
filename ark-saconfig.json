@@ -85,8 +85,8 @@
         "FieldName":"modslist",
         "InputType":"text",
         "ParamFieldName":"modslist",
-        "DefaultValue":"979566,947033,948062,931874,950914",
-        "Placeholder":"979566,947033,948062,931874,950914",
+        "DefaultValue":"979566,947033,948062,931874,950914,942024",
+        "Placeholder":"979566,947033,948062,931874,950914,942024",
         "EnumValues":{}
     },
     {
